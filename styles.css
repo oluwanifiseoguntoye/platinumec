@@ -47,7 +47,31 @@
     }
   }
 
-  .label {
+.artwork-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease; /* Add a transition effect for smooth fade-in/out */
+}
+
+.artwork-back {
+  opacity: 0; /* Initially hide the back side */
+  visibility: hidden; /* Initially hide the back side */
+}
+
+.artwork-item:hover .artwork-image {
+  opacity: 0; /* Hide the front image on hover */
+  visibility: hidden; /* Hide the front image on hover */
+}
+
+.artwork-item:hover .artwork-back {
+  opacity: 1; /* Show the back image on hover */
+  visibility: visible; /* Show the back image on hover */
+}
+
+.label {
     position: absolute; /* Position the label */
     bottom: 0; /* Position the label at the bottom of the artwork item */
     left: 0; /* Position the label at the left side of the artwork item */
