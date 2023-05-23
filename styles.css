@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 60px; /* Adjust the height of your navbar */
+    padding: 40px
+  }
+  
+  .logo img {
+    max-height: 100%; /* Adjust the maximum height of your logo */
+    max-width: 100%; /* Adjust the maximum width of your logo */
+    height: 250px;
+    width: 250px;
+  }
+
+  .artwork-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .artwork-item {
+    width: 33%; /* Adjust the width of each artwork item */
+    margin-bottom: 20px; /* Adjust the vertical spacing between items */
+    display: flex;
+    justify-content: center; /* Center the content within each item */
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  .artwork-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .artwork-item {
+      width: calc(50% - 20px); /* Adjust the width for 3 columns */
+    }
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .artwork-item {
+      width: 100%; /* Adjust the width for 1 column */
+    }
+  }
+
+  .label {
+    position: absolute; /* Position the label */
+    bottom: 0; /* Position the label at the bottom of the artwork item */
+    left: 0; /* Position the label at the left side of the artwork item */
+    width: 100%; /* Set the width of the label to match the artwork item */
+    text-align: center; /* Center the label text */
+  }
