@@ -1,0 +1,65 @@
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 60px; 
+    padding: 40px
+}
+  
+.logo img {
+    max-height: 100%; 
+    max-width: 100%; 
+    height: 250px;
+    width: 250px;
+}
+
+
+
+.artwork-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .artwork-image {
+    flex: 1 1 40%; 
+    position: relative;
+  }
+  
+  .artwork-image img {
+    width: 90%; 
+    height: auto;
+  }
+  
+  .artwork-details {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .artwork-title {
+    font-size: 24px;
+    margin-bottom: 10px; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .artwork-container {
+      flex-direction: column;
+    }
+    
+    .artwork-image,
+    .artwork-details {
+      flex: 1 1 100%;
+      border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+  }
+  
+
+  
+  
