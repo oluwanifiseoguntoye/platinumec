@@ -1,14 +1,19 @@
+body {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+
 .navbar {
     display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    height: 60px; /* Adjust the height of your navbar */
+    justify-content: center; 
+    align-items: center; 
+    height: 60px;
     padding: 40px
   }
   
   .logo img {
-    max-height: 100%; /* Adjust the maximum height of your logo */
-    max-width: 100%; /* Adjust the maximum width of your logo */
+    max-height: 100%; 
+    max-width: 100%; 
     height: 250px;
     width: 250px;
   }
@@ -16,15 +21,15 @@
   .artwork-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    align-items: center; 
   }
   
   .artwork-item {
-    width: 33%; /* Adjust the width of each artwork item */
-    margin-bottom: 20px; /* Adjust the vertical spacing between items */
+    width: 33%; 
+    margin-bottom: 20px; 
     display: flex;
-    justify-content: center; /* Center the content within each item */
+    justify-content: center; 
     padding-bottom: 10px;
     position: relative;
   }
@@ -36,14 +41,14 @@
   
   @media screen and (max-width: 1200px) {
     .artwork-item {
-      width: calc(50% - 20px); /* Adjust the width for 3 columns */
+      width: calc(50% - 20px); 
     }
   }
 
   
   @media screen and (max-width: 768px) {
     .artwork-item {
-      width: 100%; /* Adjust the width for 1 column */
+      width: 100%; 
     }
   }
 
@@ -53,28 +58,46 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0.3s ease; /* Add a transition effect for smooth fade-in/out */
+  transition: opacity 0.3s ease; 
 }
 
 .artwork-back {
-  opacity: 0; /* Initially hide the back side */
-  visibility: hidden; /* Initially hide the back side */
+  opacity: 0; 
+  visibility: hidden; 
 }
 
 .artwork-item:hover .artwork-image {
-  opacity: 0; /* Hide the front image on hover */
-  visibility: hidden; /* Hide the front image on hover */
+  opacity: 0; 
+  visibility: hidden; 
 }
 
 .artwork-item:hover .artwork-back {
-  opacity: 1; /* Show the back image on hover */
-  visibility: visible; /* Show the back image on hover */
+  opacity: 1;
+  visibility: visible; 
 }
 
 .label {
-    position: absolute; /* Position the label */
-    bottom: 0; /* Position the label at the bottom of the artwork item */
-    left: 0; /* Position the label at the left side of the artwork item */
-    width: 100%; /* Set the width of the label to match the artwork item */
-    text-align: center; /* Center the label text */
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: center; 
   }
+
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  color: #DF5479;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer a {
+  text-decoration: none;
+}
