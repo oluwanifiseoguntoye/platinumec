@@ -1,5 +1,7 @@
 body {
   font-family: 'Alfa Slab One', cursive;
+  background-color: black;
+  color: #ECDC84;
 }
 
 
@@ -26,7 +28,7 @@ body {
   }
   
   .artwork-item {
-    width: 33%; 
+    width: 25%; 
     margin-bottom: 20px; 
     display: flex;
     justify-content: center; 
@@ -82,6 +84,7 @@ body {
     left: 0; 
     width: 100%; 
     text-align: center; 
+    font-size: 15px;
   }
 
 .footer {
