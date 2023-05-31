@@ -28,7 +28,7 @@ body {
   }
   
   .artwork-item {
-    width: 25%; 
+    width: 20%; 
     margin-bottom: 20px; 
     display: flex;
     justify-content: center; 
