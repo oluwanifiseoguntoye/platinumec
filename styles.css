@@ -2,6 +2,7 @@ body {
   font-family: 'Alfa Slab One', cursive;
   background-color: black;
   color: #ECDC84;
+  font-weight: lighter;
 }
 
 
@@ -50,7 +51,11 @@ body {
   
   @media screen and (max-width: 768px) {
     .artwork-item {
-      width: 100%; 
+      width: calc(50% - 20px);  
+    }
+
+    .label {
+      font-size: smaller;
     }
   }
 
@@ -84,7 +89,7 @@ body {
     left: 0; 
     width: 100%; 
     text-align: center; 
-    font-size: 15px;
+    font-size: 10px;
   }
 
 .footer {
