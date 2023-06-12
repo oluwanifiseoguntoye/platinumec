@@ -46,16 +46,43 @@ body {
     .artwork-item {
       width: calc(50% - 20px); 
     }
+
+    .pants {
+      height: 350px;
+      width: 350px;
+    }
+  
+    .pants-label {
+      bottom: -50px; 
+    }
+  
+    .pants-label1 {
+      bottom: -50px;
+    }
   }
 
   
   @media screen and (max-width: 768px) {
     .artwork-item {
-      width: calc(50% - 20px);  
+      width: calc(100% - 20px);  
     }
 
     .label {
       font-size: smaller;
+    }
+
+    .pants {
+      height: 110px;
+      width: 110px;
+    }
+  
+    .pants-label {
+      font-size: 15px;
+      bottom: -65px; 
+    }
+  
+    .pants-label1 {
+      bottom: -65px;
     }
   }
 
@@ -122,4 +149,50 @@ body {
     width: 100%; 
     text-align: center; 
     font-size: 15px;
+}
+
+.pants-label1 {
+  position: absolute; 
+    bottom: -23px; 
+    left: 0; 
+    width: 100%; 
+    text-align: center; 
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    font-size: smaller;
+  }
+
+  .pants {
+    height: 300px;
+    width: 300px;
+  }
+
+  .pants-label {
+    font-size: 15px;
+    bottom: -50px; 
+  }
+
+  .pants-label1 {
+    bottom: -65px;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .pants {
+    height: 250px;
+    width: 250px;
+  }
+
+  .pants-label {
+    bottom: -67px; 
+  }
+
+  .pants-label1 {
+    bottom: -67px;
+  }
 }
