@@ -66,24 +66,6 @@ body {
     .artwork-item {
       width: calc(100% - 20px);  
     }
-
-    .label {
-      font-size: smaller;
-    }
-
-    .pants {
-      height: 110px;
-      width: 110px;
-    }
-  
-    .pants-label {
-      font-size: 15px;
-      bottom: -65px; 
-    }
-  
-    .pants-label1 {
-      bottom: -65px;
-    }
   }
 
 .artwork-back {
@@ -160,23 +142,22 @@ body {
     font-size: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .label {
     font-size: smaller;
   }
 
   .pants {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
 
   .pants-label {
-    font-size: 15px;
-    bottom: -50px; 
+    bottom: -67px; 
   }
 
   .pants-label1 {
-    bottom: -65px;
+    bottom: -67px;
   }
 
 }
@@ -189,10 +170,10 @@ body {
   }
 
   .pants-label {
-    bottom: -67px; 
+    bottom: -17px; 
   }
 
   .pants-label1 {
-    bottom: -67px;
+    bottom: -17px;
   }
 }
