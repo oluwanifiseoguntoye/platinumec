@@ -94,7 +94,7 @@ body {
 
 .label {
     position: absolute; 
-    bottom: 0; 
+    bottom: 50px; 
     left: 0; 
     width: 100%; 
     text-align: center; 
@@ -120,13 +120,13 @@ body {
 }
 
 .pants {
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
 }
 
 .pants-label {
   position: absolute; 
-    bottom: -23px; 
+    bottom: 5px; 
     left: 0; 
     width: 100%; 
     text-align: center; 
@@ -135,7 +135,7 @@ body {
 
 .pants-label1 {
   position: absolute; 
-    bottom: -23px; 
+    bottom: 5px; 
     left: 0; 
     width: 100%; 
     text-align: center; 
@@ -145,6 +145,7 @@ body {
 @media screen and (max-width: 768px) {
   .label {
     font-size: smaller;
+    bottom: 100px; 
   }
 
   .pants {
