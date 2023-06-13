@@ -1,33 +1,42 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap">
   <title>PLATINUM</title>
 </head>
+
 <body>
   <form id="passwordForm" onsubmit="checkPassword(event)">
     <label for="password">ENTER STORE USING PASSWORD</label><br>
     <div class="input-box">
-      <input type="password" id="password"  placeholder="Your password">
+      <input type="password" id="password" placeholder="Your password">
       <button type="submit">ENTER</button>
     </div>
-    <span  class="error-message" id="errorMessage"></span>
+    <span class="error-message" id="errorMessage"></span>
   </form>
 
   <script>
     function checkPassword(event) {
       event.preventDefault();
       var passwordInput = document.getElementById('password').value;
-      var password = 'testing'; 
+      var password = 'testing';
       var errorMessage = document.getElementById('errorMessage');
 
       if (passwordInput === password) {
-        window.location.href = 'homepage.html';
+        var currentURL = window.location.href;
+        var baseURL = currentURL.substring(0, currentURL.lastIndexOf("/"));
+        window.location.href = baseURL + '/homepage.html';
       } else {
         errorMessage.textContent = 'Wrong Password';
       }
+    }
+
+
+    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+      window.location.href = '/';
     }
   </script>
 
