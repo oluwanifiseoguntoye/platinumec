@@ -29,8 +29,8 @@ body {
   }
   
   .artwork-item {
-    width: 20%; 
-    margin-bottom: 20px; 
+    width: 33%; 
+    margin-bottom: -60px; 
     display: flex;
     justify-content: center; 
     padding-bottom: 10px;
@@ -45,19 +45,6 @@ body {
   @media screen and (max-width: 1200px) {
     .artwork-item {
       width: calc(33% - 20px); 
-    }
-
-    .pants {
-      height: 300px;
-      width: 300px;
-    }
-  
-    .pants-label {
-      bottom: -50px; 
-    }
-  
-    .pants-label1 {
-      bottom: -50px;
     }
 
     
@@ -96,7 +83,7 @@ body {
 
 .label {
     position: absolute; 
-    bottom: 50px; 
+    bottom: 80px; 
     left: 0; 
     width: 100%; 
     text-align: center; 
@@ -121,114 +108,3 @@ body {
   text-decoration: none;
 }
 
-.pants {
-  height: 150px;
-  width: 150px;
-}
-
-.pants-label {
-  position: absolute; 
-    bottom: 5px; 
-    left: 0; 
-    width: 100%; 
-    text-align: center; 
-    font-size: 15px;
-}
-
-.pants-label1 {
-  position: absolute; 
-    bottom: 5px; 
-    left: 0; 
-    width: 100%; 
-    text-align: center; 
-    font-size: 15px;
-}
-
-@media screen and (max-width: 768px) {
-  .label {
-    font-size: smaller;
-    bottom: 70px; 
-  }
-
-  .pants {
-    height: 250px;
-    width: 250px;
-  }
-
-  .pants-label {
-    bottom: -67px; 
-  }
-
-  .pants-label1 {
-    bottom: -67px;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  .pants {
-    height: 250px;
-    width: 250px;
-  }
-
-  .pants-label {
-    bottom: -17px; 
-  }
-
-  .pants-label1 {
-    bottom: -17px;
-  }
-}
-
-.shirts {
-  height: 190px;
-  width: 190px;
-}
-
-.shirt-label {
-  position: absolute; 
-    bottom: 35px; 
-    left: 0; 
-    width: 100%; 
-    text-align: center; 
-    font-size: 15px;
-}
-
-.bp-shirts {
-  height: 170px;
-  width: 170px;
-}
-
-.bp-shirt-label {
-  position: absolute; 
-    bottom: 20px; 
-    left: 0; 
-    width: 100%; 
-    text-align: center; 
-    font-size: 15px;
-}
-
-
-.crops {
-  height: 250px;
-  width: 250px;
-  margin-bottom: 10px;
-  margin-top: -50px;
-}
-
-@media screen and (max-width: 768px) {
-  .shirts{
-    height: 350px;
-    width: 350px;
-  }
-
-  .bp-shirts{
-    height: 300px;
-    width: 300px;
-  }
-
-  .crops {
-    height: 400px;
-    width: 400px;
-  }
-}
