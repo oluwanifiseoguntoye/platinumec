@@ -1,5 +1,6 @@
 body {
   font-family: 'Alfa Slab One', cursive;
+  background-color: black;
 }
 
 .navbar {
@@ -39,6 +40,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  color: #ECDC84;
 }
 
 .artwork-title {
@@ -58,6 +60,7 @@ body {
   border: none;
   background: none;
   outline: none;
+  color: #ECDC84;
 }
 
 @media screen and (max-width: 768px) {
