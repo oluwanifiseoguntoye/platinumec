@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <img class="logo" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2g3bG5ydHVqdDlwbnU4cHc3cnRqOTRra2R5a3k1ajZpZmFwb21oNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TXcH2jcXNYcKVqjxqr/giphy.gif">
+
   <form id="passwordForm" onsubmit="checkPassword(event)">
     <label for="password">ENTER STORE USING PASSWORD</label><br>
     <div class="input-box">
@@ -57,6 +59,7 @@
       background-color: black;
       color: #ECDC84;
       font-size: 20px;
+      flex-direction: column;
     }
 
     label {
@@ -89,6 +92,14 @@
       font-size: 16px;
       margin-top: 5px;
     }
+
+    .logo {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      
+    }
+
 
     @media (max-width: 768px) {
     
