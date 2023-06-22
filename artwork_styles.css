@@ -18,8 +18,11 @@ body {
   width: 250px;
 }
 
+
 .artwork-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -28,10 +31,12 @@ body {
   position: relative;
 }
 
+
 .artwork-images {
   flex: 1 1 40%;
   position: relative;
 }
+
 
 .artwork-image img {
   height: 400px;
@@ -41,9 +46,18 @@ body {
 }
 
 .pants {
-  height: 600px;
-  width: 600px;
+  width: 90%;
+  height: auto;
 }
+
+.top {
+  height: 300px;
+  width: 300px;
+  padding-left: 50px;
+}
+
+
+
 
 .artwork-details {
   flex: 1 1 40%;
@@ -77,6 +91,7 @@ body {
 @media screen and (max-width: 768px) {
   .artwork-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .artwork-image,
@@ -89,15 +104,36 @@ body {
     text-align: center;
   }
 
+  .artwork-images,
+  .artwork-details {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .artwork-image img {
+    padding-left: 0;
+  }
+
   .carousel-buttons {
     display: flex;
     justify-content: center;
-    margin-top: -50px; 
-    padding-left: 70px
+    margin-top: -30px;
+    padding-left: 0;
+    padding-right: 0;
   }
-  
+
   .carousel-button {
     margin: 0 10px;
   }
+
+  .top {
+    padding-left: 0;
+  }
+
 }
+
 

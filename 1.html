@@ -58,14 +58,14 @@
 
   <div class="artwork-container">
     <div class="artwork-images">
-      <img class="top" src="https://imagizer.imageshack.com/v2/551x551q50/r/922/sgpG3Z.png" alt="Artwork" alt="Artwork">
+      <img class="pants" src="https://i.imgur.com/eaKUI0t.png" alt="Artwork">
     </div>
     <div class="artwork-details">
-      <h1 class="artwork-title">CROPPED TOP [PINK & WHITE]</h1>
+      <h1 class="artwork-title">PARACHUTE PANTS [GREY]</h1>
       <div class="artwork-info">
-        <p>$25.00 CAD</p>
+        <p>$60.00 CAD</p>
         <br><br>
-        <p>TRUE TO SIZE</p>
+        <p>OVERSIZE</p>
         <p>SHIPS IN A WEEK</p>
       </div>
     </div>
@@ -77,24 +77,28 @@
   </div>
 
   <script>
-    const artworkImage = document.querySelector('.top');
+    // Get references to the elements
+    const artworkImage = document.querySelector('.pants');
     const modal = document.getElementById('myModal');
     const modalImg = document.getElementById('full-image');
     const closeModal = document.getElementsByClassName('close')[0];
 
-
+    // Add click event listener to the artwork image
     artworkImage.addEventListener('click', function () {
-
+      // Get the source of the clicked image
       const imageSrc = this.getAttribute('src');
 
+      // Set the source of the full image in the modal
       modalImg.setAttribute('src', imageSrc);
 
+      // Show the modal
       modal.style.display = 'block';
     });
 
+    // Add click event listener to the close button to close the modal
     closeModal.addEventListener('click', function () {
+      // Hide the modal
       modal.style.display = 'none';
     });
   </script>
 </body>
-</html>
